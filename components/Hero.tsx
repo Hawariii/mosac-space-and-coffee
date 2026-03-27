@@ -28,17 +28,17 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(200,169,126,0.36),transparent_28%)]" />
 
       <div className="section-shell relative z-10 flex min-h-screen items-center py-24 sm:py-28">
-        <div className="grid w-full gap-8 sm:gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div className="grid w-full gap-8 sm:gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16">
           <motion.div
             initial={{ opacity: 0, y: 48 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as const }}
-            className="max-w-3xl text-white"
+            className="max-w-3xl text-white lg:max-w-2xl"
           >
             <p className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[11px] font-medium tracking-[0.24em] uppercase backdrop-blur-md sm:mb-5 sm:px-4 sm:text-xs sm:tracking-[0.32em]">
               Premium Coffee Space di Bogor
             </p>
-            <h1 className="max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] text-balance sm:text-5xl md:text-7xl">
+            <h1 className="max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] text-balance sm:text-5xl md:text-7xl lg:text-[4.4rem]">
               Tempat Nongkrong Paling Nyaman di Mayor Oking
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/78 sm:mt-6 sm:text-base sm:leading-8 md:text-lg">
@@ -47,16 +47,16 @@ export function Hero() {
               ngobrol, sampai main bareng.
             </p>
 
-            <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
+            <div className="mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:flex sm:flex-row sm:gap-4">
               <a
                 href="#lokasi"
-                className="rounded-full bg-primary px-6 py-3.5 text-center text-sm font-semibold text-[#24160d] transition hover:bg-[#d5b894] sm:px-7 sm:py-4"
+                className="rounded-full bg-primary px-4 py-3.5 text-center text-sm font-semibold text-[#24160d] transition hover:bg-[#d5b894] sm:px-7 sm:py-4"
               >
                 Kunjungi Sekarang
               </a>
               <a
                 href="#galeri"
-                className="rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/16 sm:px-7 sm:py-4"
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/16 sm:px-7 sm:py-4"
               >
                 Lihat Tempat
               </a>
@@ -71,12 +71,12 @@ export function Hero() {
               delay: 0.2,
               ease: [0.22, 1, 0.36, 1] as const,
             }}
-            className="flex justify-end lg:justify-center"
+            className="flex justify-center lg:justify-end"
           >
             <motion.div
               animate={{ y: [-8, 10, -8] }}
               transition={floatingTransition}
-              className="grid max-w-md gap-4 rounded-[1.75rem] border border-white/15 bg-black/28 p-5 text-white shadow-[0_24px_70px_rgba(16,10,7,0.18)] backdrop-blur-md sm:gap-5 sm:rounded-[2rem] sm:p-6"
+              className="mx-auto grid w-full max-w-md gap-4 rounded-[1.75rem] border border-white/12 bg-black/22 p-5 text-white shadow-[0_24px_70px_rgba(16,10,7,0.14)] backdrop-blur-md sm:gap-5 sm:rounded-[2rem] sm:p-6 lg:max-w-sm"
             >
               <div className="flex items-center justify-between">
                 <div>
@@ -93,15 +93,15 @@ export function Hero() {
               </div>
 
               <div className="grid grid-cols-3 gap-2 text-xs text-white/76 sm:gap-3 sm:text-sm">
-                <div className="rounded-2xl border border-white/10 bg-white/6 p-3 sm:p-4">
+                <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">WiFi</p>
                   <p className="mt-1">Cepat & stabil</p>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/6 p-3 sm:p-4">
+                <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">PS</p>
                   <p className="mt-1">Area gaming</p>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/6 p-3 sm:p-4">
+                <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">22:00</p>
                   <p className="mt-1">Setiap hari</p>
                 </div>

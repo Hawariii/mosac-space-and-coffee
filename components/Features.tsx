@@ -93,13 +93,20 @@ export function Features() {
   return (
     <section id="fasilitas" className="py-24 md:py-32">
       <div className="section-shell">
-        <div className="mb-12 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-deep">
-            Fasilitas Unggulan
+        <div className="mb-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-deep">
+              Fasilitas Unggulan
+            </p>
+            <h2 className="section-title mt-4">
+              Semua yang bikin orang betah berlama-lama ada di sini.
+            </h2>
+          </div>
+          <p className="max-w-2xl text-sm leading-7 text-muted lg:ml-auto lg:text-base">
+            MOSAC dirancang sederhana tapi lengkap. Fokusnya bukan menumpuk
+            gimmick, melainkan menghadirkan ruang yang nyaman dipakai berulang
+            kali untuk kerja, ngobrol, dan menikmati suasana.
           </p>
-          <h2 className="section-title mt-4">
-            Semua yang bikin orang betah berlama-lama ada di sini.
-          </h2>
         </div>
 
         <motion.div
@@ -107,27 +114,27 @@ export function Features() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid gap-5 md:grid-cols-2 xl:grid-cols-3"
+          className="grid gap-4 md:grid-cols-2 xl:grid-cols-3"
         >
           {features.map((feature) => (
             <motion.article
               key={feature.title}
               variants={card}
               whileHover={{ y: -6, scale: 1.01 }}
-              className="glass-panel group rounded-[1.75rem] border border-white/40 p-6 transition"
+              className="group rounded-[1.5rem] border border-[rgba(75,54,38,0.08)] bg-white/72 p-6 shadow-[0_14px_36px_rgba(32,24,21,0.06)] transition"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#2c1d12] text-primary shadow-lg transition group-hover:bg-primary group-hover:text-[#24160d]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2c1d12] text-primary transition group-hover:bg-primary group-hover:text-[#24160d]">
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 24 24"
-                  className="h-7 w-7"
+                  className="h-6 w-6"
                   fill="none"
                 >
                   {feature.icon}
                 </svg>
               </div>
-              <h3 className="mt-6 text-xl font-semibold">{feature.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-muted">{feature.text}</p>
+              <h3 className="mt-5 text-lg font-semibold lg:text-xl">{feature.title}</h3>
+              <p className="mt-2.5 text-sm leading-7 text-muted">{feature.text}</p>
             </motion.article>
           ))}
         </motion.div>

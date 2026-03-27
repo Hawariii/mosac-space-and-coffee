@@ -50,16 +50,22 @@ export function Testimonial() {
   return (
     <section className="py-24 md:py-32">
       <div className="section-shell">
-        <div className="mb-10 max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-deep">
-            Testimoni
+        <div className="mb-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-deep">
+              Testimoni
+            </p>
+            <h2 className="section-title mt-4">
+              Pengalaman pengunjung yang bikin MOSAC terasa semakin nyata.
+            </h2>
+          </div>
+          <p className="max-w-2xl text-sm leading-7 text-muted lg:ml-auto lg:text-base">
+            Review terbaik bukan hanya soal rasa kopi, tapi juga soal suasana
+            yang konsisten nyaman dan bikin orang ingin kembali lagi.
           </p>
-          <h2 className="section-title mt-4">
-            Pengalaman pengunjung yang bikin MOSAC terasa semakin nyata.
-          </h2>
         </div>
 
-        <div className="glass-panel rounded-[1.5rem] border border-white/35 p-5 sm:rounded-[2rem] sm:p-6 md:p-10">
+        <div className="rounded-[1.75rem] border border-[rgba(75,54,38,0.08)] bg-white/76 p-5 shadow-[0_18px_48px_rgba(32,24,21,0.07)] sm:p-6 md:p-10">
           <AnimatePresence mode="wait">
             <motion.article
               key={testimonials[active].name}
@@ -67,7 +73,7 @@ export function Testimonial() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -18 }}
               transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] as const }}
-              className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end"
+              className="grid gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:items-center"
             >
               <div>
                 <Stars />
@@ -76,7 +82,7 @@ export function Testimonial() {
                 </p>
               </div>
 
-              <div className="rounded-[1.25rem] bg-white/60 p-5 sm:rounded-[1.5rem] sm:p-6">
+              <div className="rounded-[1.25rem] border border-[rgba(75,54,38,0.08)] bg-[#f7f1ea] p-5 sm:rounded-[1.5rem] sm:p-6">
                 <p className="text-lg font-semibold sm:text-xl">{testimonials[active].name}</p>
                 <p className="mt-2 text-sm text-muted">{testimonials[active].role}</p>
                 <div className="mt-8 flex gap-2">

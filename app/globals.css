@@ -51,7 +51,7 @@ a {
 .section-shell {
   position: relative;
   margin-inline: auto;
-  width: min(100% - 1rem, 1180px);
+  width: min(100% - 1rem, 1160px);
 }
 
 .glass-panel {
@@ -118,6 +118,6 @@ a {
 
 @media (min-width: 640px) {
   .section-shell {
-    width: min(100% - 1.5rem, 1180px);
+    width: min(100% - 1.5rem, 1160px);
   }
 }
