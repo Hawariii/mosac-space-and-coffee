@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#24160D"/>
+  <circle cx="930" cy="140" r="280" fill="#C8A97E" fill-opacity="0.18"/>
+  <circle cx="210" cy="520" r="220" fill="#C8A97E" fill-opacity="0.12"/>
+  <rect x="72" y="72" width="1056" height="486" rx="32" fill="url(#g)" stroke="rgba(255,255,255,0.22)"/>
+  <text x="120" y="235" fill="#C8A97E" font-family="Arial, sans-serif" font-size="28" letter-spacing="10">BOGOR, INDONESIA</text>
+  <text x="120" y="325" fill="#FFF7F0" font-family="Arial, sans-serif" font-size="78" font-weight="700">MOSAC</text>
+  <text x="120" y="390" fill="#F3E5D0" font-family="Arial, sans-serif" font-size="34">Mayor Oking Space and Coffee</text>
+  <text x="120" y="470" fill="#D7C2A7" font-family="Arial, sans-serif" font-size="28">Tempat nongkrong premium dengan suasana hangat, modern, dan nyaman.</text>
+  <defs>
+    <linearGradient id="g" x1="72" y1="72" x2="1128" y2="558" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E1D13"/>
+      <stop offset="1" stop-color="#17100C"/>
+    </linearGradient>
+  </defs>
+</svg>

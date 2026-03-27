@@ -1,0 +1,64 @@
+export function Location() {
+  return (
+    <section id="lokasi" className="py-24 md:py-32">
+      <div className="section-shell grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-start">
+        <div className="overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(30,20,12,0.12)]">
+          <iframe
+            title="Peta lokasi MOSAC - Mayor Oking Space and Coffee"
+            src="https://www.google.com/maps?q=MOSAC%20Mayor%20Oking%20Space%20and%20Coffee%20Bogor&z=15&output=embed"
+            className="h-[420px] w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+
+        <div className="glass-panel rounded-[2rem] border border-white/35 p-7 md:p-9">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-deep">
+            Lokasi
+          </p>
+          <h2 className="section-title mt-4">Singgah ke spot favorit baru di Bogor.</h2>
+
+          <div className="mt-8 space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold">Alamat</h3>
+              <p className="mt-2 text-sm leading-7 text-muted">
+                Kawasan Mayor Oking, Citeureup, Bogor, Indonesia.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold">Jam Operasional</h3>
+              <p className="mt-2 text-sm leading-7 text-muted">Setiap hari, 10:00 - 22:00 WIB</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="rounded-full bg-primary px-4 py-2 font-semibold text-[#24160d]">
+                4.5/5
+              </div>
+              <p className="text-sm text-muted">
+                Rating pelanggan untuk ambience, rasa, dan kenyamanan.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=MOSAC+Mayor+Oking+Space+and+Coffee+Bogor"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full bg-[#24160d] px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-[#3a2619]"
+            >
+              Buka di Google Maps
+            </a>
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20mau%20tanya%20ketersediaan%20tempat."
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-[var(--border)] bg-white/55 px-6 py-4 text-center text-sm font-semibold transition hover:bg-white/80"
+            >
+              Reservasi via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
