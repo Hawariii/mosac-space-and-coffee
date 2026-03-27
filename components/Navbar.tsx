@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -13,6 +13,7 @@ const navItems = [
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -22,6 +23,22 @@ export function Navbar() {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    if (!menuOpen) {
+      return;
+    }
+
+    const closeOnResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", closeOnResize);
+
+    return () => window.removeEventListener("resize", closeOnResize);
+  }, [menuOpen]);
 
   return (
     <motion.header
@@ -75,12 +92,80 @@ export function Navbar() {
             href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20ingin%20reservasi."
             target="_blank"
             rel="noreferrer"
-            className="shrink-0 rounded-full bg-primary px-3 py-2 text-xs font-semibold text-[#24160d] transition hover:bg-[#d5b894] sm:px-4 sm:text-sm"
+            className="hidden shrink-0 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-[#24160d] transition hover:bg-[#d5b894] md:inline-flex"
           >
-            <span className="sm:hidden">Visit</span>
-            <span className="hidden sm:inline">Visit / WhatsApp</span>
+            Visit / WhatsApp
           </a>
+
+          <button
+            type="button"
+            aria-label={menuOpen ? "Tutup menu" : "Buka menu"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+            className={[
+              "inline-flex h-10 w-10 items-center justify-center rounded-full border transition md:hidden",
+              scrolled
+                ? "border-[var(--border)] bg-white/70 text-[#24160d]"
+                : "border-white/15 bg-white/10 text-white",
+            ].join(" ")}
+          >
+            <span className="relative h-4 w-4">
+              <span
+                className={[
+                  "absolute left-0 top-0 block h-0.5 w-4 rounded-full bg-current transition",
+                  menuOpen ? "translate-y-[7px] rotate-45" : "",
+                ].join(" ")}
+              />
+              <span
+                className={[
+                  "absolute left-0 top-[7px] block h-0.5 w-4 rounded-full bg-current transition",
+                  menuOpen ? "opacity-0" : "",
+                ].join(" ")}
+              />
+              <span
+                className={[
+                  "absolute left-0 top-[14px] block h-0.5 w-4 rounded-full bg-current transition",
+                  menuOpen ? "-translate-y-[7px] -rotate-45" : "",
+                ].join(" ")}
+              />
+            </span>
+          </button>
         </div>
+
+        <AnimatePresence>
+          {menuOpen ? (
+            <motion.div
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] as const }}
+              className="glass-panel mt-3 rounded-[1.5rem] border border-white/40 p-3 text-[#24160d] md:hidden"
+            >
+              <nav aria-label="Navigasi mobile" className="grid gap-1">
+                {navItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="rounded-2xl px-4 py-3 text-sm font-medium transition hover:bg-white/60"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </nav>
+
+              <a
+                href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20ingin%20reservasi."
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="mt-3 block rounded-full bg-primary px-4 py-3 text-center text-sm font-semibold text-[#24160d] transition hover:bg-[#d5b894]"
+              >
+                Visit / WhatsApp
+              </a>
+            </motion.div>
+          ) : null}
+        </AnimatePresence>
       </div>
     </motion.header>
   );

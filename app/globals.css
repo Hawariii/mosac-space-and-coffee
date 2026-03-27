@@ -55,10 +55,10 @@ a {
 }
 
 .glass-panel {
-  background: rgba(255, 248, 242, 0.68);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 249, 244, 0.84);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-card);
 }
 
@@ -107,7 +107,7 @@ a {
 
 @media (min-width: 1024px) {
   .masonry-column {
-    columns: 3;
+    columns: 2;
   }
 }
 

@@ -2,6 +2,7 @@ import { About } from "@/components/About";
 import { CTA } from "@/components/CTA";
 import { Experience } from "@/components/Experience";
 import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
 import { Location } from "@/components/Location";
@@ -24,6 +25,7 @@ export default function Home() {
         <Testimonial />
         <CTA />
       </main>
+      <Footer />
     </>
   );
 }

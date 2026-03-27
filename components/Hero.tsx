@@ -71,12 +71,12 @@ export function Hero() {
               delay: 0.2,
               ease: [0.22, 1, 0.36, 1] as const,
             }}
-            className="flex justify-end"
+            className="flex justify-end lg:justify-center"
           >
             <motion.div
               animate={{ y: [-8, 10, -8] }}
               transition={floatingTransition}
-              className="glass-panel premium-ring grid max-w-md gap-4 rounded-[1.75rem] p-5 text-white sm:gap-5 sm:rounded-[2rem] sm:p-6"
+              className="grid max-w-md gap-4 rounded-[1.75rem] border border-white/15 bg-black/28 p-5 text-white shadow-[0_24px_70px_rgba(16,10,7,0.18)] backdrop-blur-md sm:gap-5 sm:rounded-[2rem] sm:p-6"
             >
               <div className="flex items-center justify-between">
                 <div>
@@ -93,15 +93,15 @@ export function Hero() {
               </div>
 
               <div className="grid grid-cols-3 gap-2 text-xs text-white/76 sm:gap-3 sm:text-sm">
-                <div className="rounded-2xl bg-white/8 p-3 sm:p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/6 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">WiFi</p>
                   <p className="mt-1">Cepat & stabil</p>
                 </div>
-                <div className="rounded-2xl bg-white/8 p-3 sm:p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/6 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">PS</p>
                   <p className="mt-1">Area gaming</p>
                 </div>
-                <div className="rounded-2xl bg-white/8 p-3 sm:p-4">
+                <div className="rounded-2xl border border-white/10 bg-white/6 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">22:00</p>
                   <p className="mt-1">Setiap hari</p>
                 </div>
