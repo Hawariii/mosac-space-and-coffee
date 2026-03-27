@@ -52,7 +52,7 @@ export function Location() {
               href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20mau%20tanya%20ketersediaan%20tempat."
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-[var(--border)] bg-white/55 px-6 py-4 text-center text-sm font-semibold transition hover:bg-white/80"
+              className="rounded-full border border-primary/40 bg-primary/10 px-6 py-4 text-center text-sm font-semibold text-primary-deep transition hover:bg-primary/15"
             >
               Reservasi via WhatsApp
             </a>

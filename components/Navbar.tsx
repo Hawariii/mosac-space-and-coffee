@@ -35,7 +35,7 @@ export function Navbar() {
           className={[
             "flex items-center justify-between rounded-full px-4 py-3 text-sm transition-all duration-300 md:px-6",
             scrolled
-              ? "glass-panel border border-white/35"
+              ? "glass-panel border border-white/35 text-[#24160d]"
               : "border border-white/15 bg-black/15 text-white",
           ].join(" ")}
         >
