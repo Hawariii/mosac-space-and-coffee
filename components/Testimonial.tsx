@@ -59,7 +59,7 @@ export function Testimonial() {
           </h2>
         </div>
 
-        <div className="glass-panel rounded-[2rem] border border-white/35 p-6 md:p-10">
+        <div className="glass-panel rounded-[1.5rem] border border-white/35 p-5 sm:rounded-[2rem] sm:p-6 md:p-10">
           <AnimatePresence mode="wait">
             <motion.article
               key={testimonials[active].name}
@@ -71,13 +71,13 @@ export function Testimonial() {
             >
               <div>
                 <Stars />
-                <p className="mt-6 max-w-3xl text-2xl leading-[1.6] tracking-[-0.03em] text-balance md:text-3xl">
+                <p className="mt-5 max-w-3xl text-xl leading-[1.7] tracking-[-0.03em] text-balance sm:mt-6 sm:text-2xl md:text-3xl">
                   “{testimonials[active].text}”
                 </p>
               </div>
 
-              <div className="rounded-[1.5rem] bg-white/60 p-6">
-                <p className="text-xl font-semibold">{testimonials[active].name}</p>
+              <div className="rounded-[1.25rem] bg-white/60 p-5 sm:rounded-[1.5rem] sm:p-6">
+                <p className="text-lg font-semibold sm:text-xl">{testimonials[active].name}</p>
                 <p className="mt-2 text-sm text-muted">{testimonials[active].role}</p>
                 <div className="mt-8 flex gap-2">
                   {testimonials.map((testimonial, index) => (
