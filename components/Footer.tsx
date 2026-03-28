@@ -24,9 +24,9 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 text-sm leading-7 text-[#5f4a3a]">
-            Coffee shop yang dirancang untuk jadi tempat singgah yang nyaman,
-            bersih, dan terasa hangat, baik untuk kerja, ngobrol, maupun quality
-            time di Bogor.
+            Destinasi nongkrong modern di Citeureup yang menggabungkan coffee
+            shop, food space, dan area produktif dalam suasana modern-industrial
+            yang nyaman untuk kerja, santai, dan berkumpul.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function Footer() {
             Informasi
           </h2>
           <div className="mt-4 grid gap-4 text-sm text-[#5f4a3a]">
-            <p>Kawasan Mayor Oking, Citeureup, Bogor, Indonesia.</p>
+            <p>Kawasan Mayor Oking, Citeureup, Bogor, dekat pintu Tol Citeureup.</p>
             <p>Setiap hari, 10:00 - 22:00 WIB</p>
             <a
               href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20ingin%20bertanya."

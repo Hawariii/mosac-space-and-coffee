@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 const siteUrl = "https://mosac-cafe.vercel.app";
-const title = "MOSAC - Mayor Oking Space and Coffee | Cafe Premium di Bogor";
+const title = "MOSAC - Mayor Oking Space and Coffee | Nongkrong, Kerja, dan Ngopi di Citeureup";
 const description =
-  "MOSAC adalah coffee shop premium di Mayor Oking, Bogor, dengan suasana nyaman, aesthetic, modern industrial, cocok untuk nongkrong, kerja, dan menikmati kopi berkualitas.";
+  "MOSAC adalah destinasi nongkrong modern di Citeureup, Bogor, yang menggabungkan coffee shop, food space, dan area produktif dengan suasana modern-industrial yang nyaman untuk work from cafe, santai, dan kumpul bersama teman.";
 const keywords = [
   "cafe bogor",
   "tempat nongkrong citeureup",

@@ -36,15 +36,16 @@ export function Hero() {
             className="max-w-3xl text-white lg:max-w-2xl"
           >
             <p className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[11px] font-medium tracking-[0.24em] uppercase backdrop-blur-md sm:mb-5 sm:px-4 sm:text-xs sm:tracking-[0.32em]">
-              Premium Coffee Space di Bogor
+              Modern Space di Citeureup, Bogor
             </p>
             <h1 className="max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] text-balance sm:text-5xl md:text-7xl lg:text-[4.4rem]">
               Tempat Nongkrong Paling Nyaman di Mayor Oking
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/78 sm:mt-6 sm:text-base sm:leading-8 md:text-lg">
-              MOSAC menghadirkan ruang hangout bergaya modern industrial dengan
-              kopi berkualitas, ambience hangat, dan sudut favorit untuk kerja,
-              ngobrol, sampai main bareng.
+              MOSAC menggabungkan coffee shop, food space, dan area produktif
+              dalam satu tempat. Dengan desain modern-industrial yang hangat dan
+              lokasi strategis dekat pintu Tol Citeureup, MOSAC cocok untuk work
+              from cafe, nongkrong santai, sampai kumpul bareng teman.
             </p>
 
             <div className="mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:flex sm:flex-row sm:gap-4">
@@ -81,10 +82,10 @@ export function Hero() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-white/70">
-                    Signature Mood
+                    MOSAC Atmosphere
                   </p>
                   <p className="mt-2 text-xl font-semibold sm:text-2xl">
-                    Cozy, aesthetic, and alive.
+                    Luas, hangat, dan nyaman untuk beraktivitas.
                   </p>
                 </div>
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-lg font-bold text-[#24160d]">
@@ -95,15 +96,15 @@ export function Hero() {
               <div className="grid grid-cols-3 gap-2 text-xs text-white/76 sm:gap-3 sm:text-sm">
                 <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">WiFi</p>
-                  <p className="mt-1">Cepat & stabil</p>
+                  <p className="mt-1">Untuk kerja nyaman</p>
+                </div>
+                <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
+                  <p className="text-lg font-semibold text-white sm:text-xl">Indoor</p>
+                  <p className="mt-1">Dan outdoor luas</p>
                 </div>
                 <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
                   <p className="text-lg font-semibold text-white sm:text-xl">PS</p>
-                  <p className="mt-1">Area gaming</p>
-                </div>
-                <div className="rounded-2xl border border-white/8 bg-white/4 p-3 sm:p-4">
-                  <p className="text-lg font-semibold text-white sm:text-xl">22:00</p>
-                  <p className="mt-1">Setiap hari</p>
+                  <p className="mt-1">Area hiburan</p>
                 </div>
               </div>
             </motion.div>

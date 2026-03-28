@@ -9,15 +9,15 @@ export function CTA() {
                 Final Invitation
               </p>
               <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-[-0.05em] sm:text-4xl md:text-6xl">
-                Tempat nongkrong bukan cuma soal kopi, tapi soal pengalaman.
+                MOSAC bukan cuma tempat minum kopi, tapi ruang untuk beraktivitas dan menciptakan momen.
               </h2>
             </div>
 
             <div>
               <p className="max-w-xl text-base leading-8 text-white/72">
-                Kalau kamu cari tempat yang terasa hangat, terlihat berkelas,
-                dan nyaman untuk kembali lagi, MOSAC siap jadi destinasi favorit
-                berikutnya.
+                Kalau kamu cari tempat yang nyaman untuk work from cafe,
+                nongkrong santai, makan, atau kumpul bareng teman di Citeureup,
+                MOSAC siap jadi spot andalan yang ingin kamu kunjungi lagi.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">

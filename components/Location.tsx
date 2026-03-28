@@ -16,13 +16,13 @@ export function Location() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-deep">
             Lokasi
           </p>
-          <h2 className="section-title mt-4">Singgah ke spot favorit baru di Bogor.</h2>
+          <h2 className="section-title mt-4">Mudah disinggahi, nyaman untuk berlama-lama.</h2>
 
           <div className="mt-6 space-y-5 sm:mt-8 sm:space-y-6">
             <div>
               <h3 className="text-lg font-semibold">Alamat</h3>
               <p className="mt-2 text-sm leading-7 text-muted">
-                Kawasan Mayor Oking, Citeureup, Bogor, Indonesia.
+                Kawasan Mayor Oking, Citeureup, Bogor, dekat pintu Tol Citeureup.
               </p>
             </div>
             <div>
@@ -34,7 +34,7 @@ export function Location() {
                 4.5/5
               </div>
               <p className="text-sm text-muted">
-                Rating pelanggan untuk ambience, rasa, dan kenyamanan.
+                Dikenal karena ambience nyaman, tempat luas, dan cocok untuk kerja maupun santai.
               </p>
             </div>
           </div>

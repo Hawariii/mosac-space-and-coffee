@@ -33,11 +33,11 @@ export function About() {
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
               <p className="text-xs uppercase tracking-[0.3em] text-white/70">
-                Space & Coffee
+                Coffee, Food, and Productive Space
               </p>
               <p className="mt-2 max-w-xs text-lg font-medium">
-                Desain hangat dengan detail industrial yang bikin betah dari
-                siang sampai malam.
+                Gaya modern-industrial dengan sentuhan hangat dan area hijau
+                yang terasa nyaman sepanjang hari.
               </p>
             </div>
           </div>
@@ -54,26 +54,28 @@ export function About() {
             Tentang MOSAC
           </p>
           <h2 className="section-title max-w-2xl">
-            Ruang nyaman untuk kerja fokus, ngobrol santai, dan recharge dengan
-            kopi yang proper.
+            Destinasi nongkrong modern di Citeureup yang dibuat untuk kerja,
+            santai, makan, dan menciptakan momen.
           </h2>
           <p className="section-copy">
-            Berlokasi di area Mayor Oking, MOSAC dirancang sebagai coffee shop
-            yang terasa premium namun tetap approachable. Material hangat,
-            pencahayaan lembut, dan layout yang lega membuat setiap sudut terasa
-            pas untuk laptopan, meeting kecil, sampai quality time bareng teman.
+            MOSAC - Mayor Oking Space and Coffee hadir sebagai tempat singgah
+            yang menggabungkan coffee shop, food space, dan area produktif dalam
+            satu pengalaman yang utuh. Lokasinya strategis dekat pintu Tol
+            Citeureup, jadi mudah dijangkau untuk meeting santai, work from
+            cafe, atau sekadar rehat sejenak dari rutinitas.
           </p>
           <p className="section-copy">
-            Vibe modern industrial yang bersih dipadukan dengan pelayanan
-            ramah, menu yang easy to enjoy, dan fasilitas lengkap menjadikan
-            MOSAC lebih dari sekadar tempat ngopi.
+            Desain modern-industrial yang dipadukan dengan sentuhan hangat,
+            area hijau, serta pilihan indoor dan outdoor membuat MOSAC terasa
+            estetik tanpa kehilangan kenyamanan. Tempat ini bukan cuma soal
+            kopi, tapi ruang untuk beraktivitas, bersosialisasi, dan berlama-lama.
           </p>
 
           <div className="grid gap-4 sm:grid-cols-3">
             {[
-              ["Modern vibe", "Interior clean dan stylish"],
-              ["Work friendly", "Nyaman untuk WFC dan meeting"],
-              ["Social hub", "Pas buat nongkrong sampai malam"],
+              ["Strategis", "Dekat pintu Tol Citeureup"],
+              ["Luas", "Pilihan area indoor dan outdoor"],
+              ["Multifungsi", "Pas untuk kerja dan nongkrong"],
             ].map(([title, copy]) => (
               <div
                 key={title}

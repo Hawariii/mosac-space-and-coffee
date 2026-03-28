@@ -1,23 +1,23 @@
 const categories = [
   {
     title: "Coffee",
-    description: "Espresso, latte, cappuccino, dan signature coffee dengan karakter roast hangat.",
-    items: ["Americano", "Spanish Latte", "Butterscotch Latte"],
+    description: "Pilihan kopi berkualitas untuk teman kerja, meeting, atau menikmati suasana MOSAC dengan santai.",
+    items: ["Latte", "Americano", "Cappuccino"],
   },
   {
     title: "Non-Coffee",
-    description: "Pilihan creamy, refreshing, dan nyaman buat semua mood nongkrong.",
-    items: ["Matcha Latte", "Chocolate Velvet", "Lemon Tea Sparkling"],
+    description: "Minuman yang tetap nyaman dinikmati semua kalangan, dari yang creamy sampai yang refreshing.",
+    items: ["Matcha Latte", "Chocolate", "Special Drinks"],
   },
   {
     title: "Food",
-    description: "Menu gurih dan mengenyangkan untuk brunch, dinner ringan, atau sharing.",
-    items: ["Rice Bowl", "Pasta Creamy", "Chicken Sambal Matah"],
+    description: "Menu makanan berat yang cocok untuk isi tenaga saat work from cafe atau kumpul lebih lama.",
+    items: ["Rice Bowl", "Nasi Goreng", "Pasta"],
   },
   {
     title: "Snacks",
-    description: "Teman ngobrol yang pas, dari yang renyah sampai manis buat pencuci mood.",
-    items: ["French Fries", "Mix Platter", "Croffle Ice Cream"],
+    description: "Pilihan makanan ringan untuk teman ngobrol, sharing, atau pencuci mood sambil santai.",
+    items: ["French Fries", "Mix Platter", "Snack Bites"],
   },
 ];
 
@@ -30,7 +30,7 @@ export function Menu() {
             Pilihan Menu
           </p>
           <h2 className="section-title mt-4">
-            Menu yang approachable, photogenic, dan cocok buat repeat order.
+            Bukan cuma kopi, tapi pilihan menu yang bikin betah berlama-lama.
           </h2>
         </div>
 
@@ -59,7 +59,7 @@ export function Menu() {
                     className="flex items-center justify-between gap-3 rounded-2xl border border-[var(--border)] bg-white/55 px-4 py-3.5 sm:py-4"
                   >
                     <span className="min-w-0 text-sm font-medium sm:text-base">{item}</span>
-                    <span className="shrink-0 text-xs text-muted sm:text-sm">Mulai 25k</span>
+                    <span className="shrink-0 text-xs text-muted sm:text-sm">Ramah di kantong</span>
                   </div>
                 ))}
               </div>

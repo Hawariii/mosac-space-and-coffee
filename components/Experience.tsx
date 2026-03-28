@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     title: "Work from Cafe",
-    copy: "Meja nyaman, koneksi stabil, dan ambience yang bantu kamu tetap fokus lebih lama.",
+    copy: "Area duduk yang lega, koneksi internet yang stabil, dan suasana yang mendukung produktivitas tanpa terasa kaku.",
     tone: "from-[#f2dfc5] to-[#f8f5f2]",
   },
   {
-    title: "Hangout Time",
-    copy: "Spot duduk yang fleksibel untuk quality time santai, ngobrol panjang, atau mini celebration.",
+    title: "Hangout Santai",
+    copy: "Pilihan indoor dan outdoor memberi suasana yang pas untuk ngobrol panjang, quality time, atau sekadar menikmati sore.",
     tone: "from-[#dcc2a2] to-[#f6eee4]",
   },
   {
-    title: "Gaming Session",
-    copy: "Area PlayStation yang bikin nongkrong terasa lebih hidup dan punya alasan buat balik lagi.",
+    title: "Interactive Space",
+    copy: "PlayStation area dan suasana yang hidup membuat MOSAC terasa lebih dari coffee shop biasa, tapi tempat berkegiatan.",
     tone: "from-[#c8a97e] to-[#f1e4d2]",
   },
 ];
@@ -30,13 +30,13 @@ export function Experience() {
               Experience
             </p>
             <h2 className="section-title mt-4">
-              Satu tempat, banyak alasan buat datang lagi.
+              Dari produktif sampai santai, semuanya terasa nyambung di satu tempat.
             </h2>
           </div>
           <p className="max-w-2xl text-sm leading-7 text-muted lg:ml-auto lg:text-base">
-            Dari produktif di siang hari sampai santai di malam hari, setiap
-            sudut MOSAC dibuat supaya pengalaman datangnya terasa ringan,
-            menyenangkan, dan mudah diulang.
+            MOSAC bukan cuma tempat buat minum kopi. Di sini, pengunjung bisa
+            bekerja, makan, ngobrol, atau menikmati hiburan ringan dalam suasana
+            yang tetap nyaman dan estetik.
           </p>
         </div>
 

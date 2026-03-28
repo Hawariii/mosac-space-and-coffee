@@ -7,22 +7,22 @@ const testimonials = [
   {
     name: "Dina Rahma",
     role: "Content Creator",
-    text: "Tempatnya estetik banget tapi tetap nyaman buat duduk lama. Lighting malamnya bikin suasana berasa premium.",
+    text: "Yang paling kerasa di MOSAC itu tempatnya luas dan estetik, tapi tetap nyaman dipakai lama. Cocok buat bikin konten tanpa kehilangan feel hangatnya.",
   },
   {
     name: "Arga Pratama",
     role: "Remote Worker",
-    text: "WiFi lancar, kursinya enak, dan suasananya pas buat kerja. Jarang nemu cafe yang balance antara produktif dan cozy.",
+    text: "Buat work from cafe, MOSAC enak banget. WiFi aman, tempat duduk lega, dan suasananya produktif tanpa terasa terlalu formal.",
   },
   {
     name: "Nadia & Friends",
     role: "Weekend Hangout",
-    text: "Kami suka karena pilihan tempat duduknya banyak dan ada area buat main juga. Cocok buat nongkrong rame-rame.",
+    text: "Kami suka karena ada area indoor dan outdoor, jadi bisa pilih suasana. Ditambah ada PlayStation, nongkrong rame-rame jadi lebih seru.",
   },
   {
     name: "Rizky H",
     role: "Coffee Lover",
-    text: "Kopinya proper, makanannya aman, dan ambience-nya punya karakter. Tempat kayak gini gampang jadi langganan.",
+    text: "Bukan cuma kopinya enak, tapi kombinasi coffee, food, dan tempatnya bikin MOSAC terasa lengkap. Tempat seperti ini gampang jadi langganan.",
   },
 ];
 
@@ -56,12 +56,12 @@ export function Testimonial() {
               Testimoni
             </p>
             <h2 className="section-title mt-4">
-              Pengalaman pengunjung yang bikin MOSAC terasa semakin nyata.
+              Pengalaman pengunjung yang paling sering diingat dari MOSAC.
             </h2>
           </div>
           <p className="max-w-2xl text-sm leading-7 text-muted lg:ml-auto lg:text-base">
-            Review terbaik bukan hanya soal rasa kopi, tapi juga soal suasana
-            yang konsisten nyaman dan bikin orang ingin kembali lagi.
+            Yang menonjol dari MOSAC bukan cuma menunya, tapi kombinasi tempat,
+            suasana, dan fleksibilitas aktivitas yang bikin orang betah kembali.
           </p>
         </div>
 
