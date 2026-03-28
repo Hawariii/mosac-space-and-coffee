@@ -1,0 +1,98 @@
+{
+  "name": "MOSAC - Mayor Oking Space and Coffee",
+  "city": "Citeureup, Bogor",
+  "address": "Jl. Raya Mayor Oking Jaya Atmaja samping pintu tol, Karang Asem Bar., Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16811",
+  "hours": [
+    {
+      "days": "Senin - Rabu",
+      "time": "10.00 - 22.00 WIB"
+    },
+    {
+      "days": "Kamis - Minggu",
+      "time": "10.00 - 02.00 WIB"
+    }
+  ],
+  "contact": {
+    "whatsapp_number": "+6285173383437",
+    "whatsapp_label": "+62 851-7338-3437",
+    "whatsapp_reservation_url": "https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20saya%20mau%20tanya%20ketersediaan%20tempat.",
+    "whatsapp_visit_url": "https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20saya%20ingin%20berkunjung.",
+    "whatsapp_menu_url": "https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20boleh%20minta%20menu%20lengkap%3F",
+    "instagram_handle": "@mosac.id",
+    "instagram_url": "https://www.instagram.com/mosac.id/"
+  },
+  "delivery": [
+    {
+      "name": "GoFood",
+      "url": "https://gofood.link/a/Gx5XPJQ?utm_source=linktree_admin_share&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQ0dS9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadh8WdjHwlYKVM1FTN4uOyE-OkinerIFZxxDbvZtuhYe8W2oWHppDAf5TiWgA_aem_zdFkxFXPtXkXcjNsBPX_yQ"
+    },
+    {
+      "name": "GrabFood",
+      "url": "https://r.grab.com/g/6-20260328_154914_6a6dc38a1f8f4a2c84b0dc7938749b71_MEXMPS-6-C36WANLWKBTYFE"
+    },
+    {
+      "name": "ShopeeFood",
+      "url": "https://shopee.co.id/universal-link/now-food/shop/21159289?deep_and_deferred=1&shareChannel=copy_link"
+    }
+  ],
+  "menu_categories": [
+    {
+      "title": "Espresso Based Coffee",
+      "description": "Pilihan kopi klasik dan signature dengan rasa yang kuat, elegan, dan cocok dinikmati dari pagi sampai malam.",
+      "items": [
+        "Espresso - 12k",
+        "Americano - 16-18k",
+        "Affogato - 22k",
+        "Latte (Hazelnut / Vanilla) - 20-22k (+5k flavor)",
+        "Kopi Susu Gula Aren - 20-22k",
+        "Kopi Susu Gula Aren Strong - 22-24k",
+        "Kopi Susu Baileys - 24-26k",
+        "Kopi Susu Butterscotch - 24-26k",
+        "Kopi Susu Klepon - 25-27k",
+        "Kopi Susu Salted Caramel - 24-26k",
+        "Add Espresso Shot +4k"
+      ]
+    },
+    {
+      "title": "Nitro Crafts & Refreshers",
+      "description": "Signature drinks dengan nitrogen infusion, rasa unik, creamy, segar, dan cocok buat chill sore atau nongkrong santai.",
+      "items": [
+        "Apple Mint - 24k",
+        "Snowberry Tea - 24k",
+        "Summer Tea - 24k",
+        "Tropical Coffee - 24k",
+        "Blue Ocean Mojito - 24k",
+        "Green Ivey Mojito - 24k",
+        "Lemon Mojito - 24k",
+        "Lychee Yakult - 26k",
+        "Lemon Yakult - 24k"
+      ]
+    },
+    {
+      "title": "Tea & Non Espresso Based",
+      "description": "Pilihan ringan untuk yang ingin tetap menikmati vibes MOSAC tanpa espresso, dari tea based sampai latte non kopi.",
+      "items": [
+        "Lychee Tea - 25-26k",
+        "Lemongrass Tea - 25-26k",
+        "Apple Tea - 25-26k",
+        "Tea - 25-26k",
+        "Sweet Tea - 25-26k",
+        "Black Charcoal Latte - 24k",
+        "Chocolate Latte - 18k",
+        "Matcha Latte - 16k",
+        "Taro Latte - 16k"
+      ]
+    },
+    {
+      "title": "Light Snacks",
+      "description": "Teman nongkrong yang wajib ada, cocok buat sharing atau nemenin kopi tanpa bikin suasana terlalu berat.",
+      "items": [
+        "French Fries - 5k",
+        "Ice Cream - 8k",
+        "Nuggets - 12k",
+        "Chicken Wings - 7k",
+        "Sausage - 15k"
+      ]
+    }
+  ]
+}

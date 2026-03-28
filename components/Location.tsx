@@ -1,3 +1,5 @@
+import mosacData from "@/data/mosac.json";
+
 export function Location() {
   return (
     <section id="lokasi" className="py-24 md:py-32">
@@ -21,28 +23,31 @@ export function Location() {
           <div className="mt-6 space-y-5 sm:mt-8 sm:space-y-6">
             <div>
               <h3 className="text-lg font-semibold">Alamat</h3>
-              <p className="mt-2 text-sm leading-7 text-muted">
-                Jl. Raya Mayor Oking Jaya Atmaja samping pintu tol, Karang Asem
-                Bar., Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16811
-              </p>
+              <p className="mt-2 text-sm leading-7 text-muted">{mosacData.address}</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold">Kontak</h3>
               <div className="mt-2 grid gap-2 text-sm text-muted">
-                <p>Reservasi / WhatsApp: +62 851-7338-3437</p>
+                <p>Reservasi / WhatsApp: {mosacData.contact.whatsapp_label}</p>
                 <a
-                  href="https://www.instagram.com/mosac.id/"
+                  href={mosacData.contact.instagram_url}
                   target="_blank"
                   rel="noreferrer"
                   className="font-medium text-primary-deep transition hover:text-[#24160d]"
                 >
-                  Instagram: @mosac.id
+                  Instagram: {mosacData.contact.instagram_handle}
                 </a>
               </div>
             </div>
             <div>
               <h3 className="text-lg font-semibold">Jam Operasional</h3>
-              <p className="mt-2 text-sm leading-7 text-muted">Setiap hari, 10:00 - 22:00 WIB</p>
+              <div className="mt-2 grid gap-2 text-sm leading-7 text-muted">
+                {mosacData.hours.map((hour) => (
+                  <p key={hour.days}>
+                    {hour.days}: {hour.time}
+                  </p>
+                ))}
+              </div>
             </div>
             <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <div className="rounded-full bg-primary px-4 py-2 font-semibold text-[#24160d]">
@@ -64,7 +69,7 @@ export function Location() {
               Buka di Google Maps
             </a>
             <a
-              href="https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20saya%20mau%20tanya%20ketersediaan%20tempat."
+              href={mosacData.contact.whatsapp_reservation_url}
               target="_blank"
               rel="noreferrer"
               className="w-full rounded-full border border-primary/40 bg-primary/10 px-6 py-4 text-center text-sm font-semibold text-primary-deep transition hover:bg-primary/15 sm:w-auto"

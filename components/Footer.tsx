@@ -1,3 +1,5 @@
+import mosacData from "@/data/mosac.json";
+
 const footerLinks = [
   { label: "Tentang", href: "#tentang" },
   { label: "Galeri", href: "#galeri" },
@@ -18,9 +20,7 @@ export function Footer() {
               <p className="text-[11px] uppercase tracking-[0.32em] text-[#7d644f]">
                 Bogor
               </p>
-              <p className="text-sm font-semibold">
-                MOSAC - Mayor Oking Space and Coffee
-              </p>
+              <p className="text-sm font-semibold">{mosacData.name}</p>
             </div>
           </div>
           <p className="mt-5 text-sm leading-7 text-[#5f4a3a]">
@@ -52,33 +52,36 @@ export function Footer() {
             Informasi
           </h2>
           <div className="mt-4 grid gap-4 text-sm text-[#5f4a3a]">
-            <p>
-              Jl. Raya Mayor Oking Jaya Atmaja samping pintu tol, Karang Asem
-              Bar., Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16811
-            </p>
-            <p>Setiap hari, 10:00 - 22:00 WIB</p>
+            <p>{mosacData.address}</p>
+            <div className="grid gap-1">
+              {mosacData.hours.map((hour) => (
+                <p key={hour.days}>
+                  {hour.days}: {hour.time}
+                </p>
+              ))}
+            </div>
             <a
-              href="https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20saya%20ingin%20bertanya."
+              href={mosacData.contact.whatsapp_reservation_url}
               target="_blank"
               rel="noreferrer"
               className="font-medium text-[#2b1d13] transition hover:text-primary-deep"
             >
-              WhatsApp: +62 851-7338-3437
+              WhatsApp: {mosacData.contact.whatsapp_label}
             </a>
             <a
-              href="https://www.instagram.com/mosac.id/"
+              href={mosacData.contact.instagram_url}
               target="_blank"
               rel="noreferrer"
               className="font-medium text-[#2b1d13] transition hover:text-primary-deep"
             >
-              Instagram: @mosac.id
+              Instagram: {mosacData.contact.instagram_handle}
             </a>
           </div>
         </div>
       </div>
 
       <div className="section-shell mt-10 border-t border-black/8 pt-5 text-sm text-[#7d644f]">
-        <p>© 2026 MOSAC - Mayor Oking Space and Coffee. All rights reserved.</p>
+        <p>© 2026 {mosacData.name}. All rights reserved.</p>
       </div>
     </footer>
   );
