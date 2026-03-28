@@ -22,7 +22,7 @@ export function CTA() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20ingin%20berkunjung."
+                  href="https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20saya%20ingin%20berkunjung."
                   target="_blank"
                   rel="noreferrer"
                   className="w-full rounded-full bg-primary px-6 py-4 text-center text-sm font-semibold text-[#24160d] transition hover:bg-[#d5b894] sm:w-auto"

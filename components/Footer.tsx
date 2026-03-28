@@ -52,15 +52,26 @@ export function Footer() {
             Informasi
           </h2>
           <div className="mt-4 grid gap-4 text-sm text-[#5f4a3a]">
-            <p>Kawasan Mayor Oking, Citeureup, Bogor, dekat pintu Tol Citeureup.</p>
+            <p>
+              Jl. Raya Mayor Oking Jaya Atmaja samping pintu tol, Karang Asem
+              Bar., Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16811
+            </p>
             <p>Setiap hari, 10:00 - 22:00 WIB</p>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20MOSAC%2C%20saya%20ingin%20bertanya."
+              href="https://wa.me/6285173383437?text=Halo%20MOSAC%2C%20saya%20ingin%20bertanya."
               target="_blank"
               rel="noreferrer"
               className="font-medium text-[#2b1d13] transition hover:text-primary-deep"
             >
-              WhatsApp
+              WhatsApp: +62 851-7338-3437
+            </a>
+            <a
+              href="https://www.instagram.com/mosac.id/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-[#2b1d13] transition hover:text-primary-deep"
+            >
+              Instagram: @mosac.id
             </a>
           </div>
         </div>
