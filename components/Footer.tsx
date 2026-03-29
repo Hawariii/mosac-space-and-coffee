@@ -81,7 +81,7 @@ export function Footer() {
       </div>
 
       <div className="section-shell mt-10 border-t border-black/8 pt-5 text-sm text-[#7d644f]">
-        <p>© 2026 {mosacData.name}. All rights reserved.</p>
+        <p>© 2026 Ahmad Hawari. All rights reserved.</p>
       </div>
     </footer>
   );
